@@ -32,4 +32,4 @@ Explain *why* these bounds hold.
 - `example.py` — runnable demo
 - `exercises.py` — practice problems (fill in the `TODO` stubs yourself)
 - `solution.py` — worked solutions to the exercises
-- `test_topic.py` — pytest tests (run with `python -m pytest test_topic.py`)
+- `test_topic.py` — unittest tests (run with `python -m unittest test_topic.py`)

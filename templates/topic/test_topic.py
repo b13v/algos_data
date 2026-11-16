@@ -1,16 +1,22 @@
 """Tests for <Topic Name>.
 
-Run with: python -m pytest test_topic.py
+Run with either:
+    python -m unittest test_topic.py      # no install needed (stdlib)
+    python -m pytest test_topic.py        # if you have pytest installed
 """
 
-import pytest
+import unittest
 
 from implementation import reference_implementation
 
 
-def test_example():
-    assert reference_implementation([1, 2, 3]) == [1, 2, 3]  # TODO: expected value
+class TestTopic(unittest.TestCase):
+    def test_example(self):
+        self.assertEqual(reference_implementation([1, 2, 3]), [1, 2, 3])
+
+    def test_edge_case_empty(self):
+        self.assertEqual(reference_implementation([]), [])
 
 
-def test_edge_case_empty():
-    assert reference_implementation([]) == []  # TODO: expected value
+if __name__ == "__main__":
+    unittest.main()

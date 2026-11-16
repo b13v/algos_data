@@ -32,7 +32,7 @@ Every topic folder follows the same template (`templates/topic/`):
 | `example.py` | Runnable demo |
 | `exercises.py` | Practice problems with `TODO` stubs |
 | `solution.py` | Worked solutions |
-| `test_topic.py` | `pytest` tests |
+| `test_topic.py` | `unittest` tests |
 
 ## Running the code
 
@@ -41,7 +41,7 @@ Every topic folder follows the same template (`templates/topic/`):
 python example.py
 
 # run the tests for a topic
-python -m pytest test_topic.py
+python -m unittest test_topic.py
 ```
 
-No third-party dependencies beyond `pytest` are required. The examples use only the Python standard library.
+No third-party dependencies are required — everything uses the Python standard library.

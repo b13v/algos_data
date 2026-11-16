@@ -13,7 +13,7 @@ This is your roadmap for learning Data Structures and Algorithms (DSA) from scra
 3. Run `python example.py` to see the algorithm in action.
 4. Read `implementation.py` line by line (it is heavily annotated).
 5. Try the problems in `exercises.py` yourself before peeking at `solution.py`.
-6. Run `python -m pytest test_topic.py` to check your work.
+6. Run `python -m unittest test_topic.py` to check your work.
 7. Mark the topic done in the **Progress tracker** at the bottom of this file, then move on.
 
 Each topic folder contains:
@@ -25,7 +25,7 @@ Each topic folder contains:
 | `example.py` | Runnable demo showing the algorithm/data structure in action |
 | `exercises.py` | Practice problems with `TODO` stubs for you to fill in |
 | `solution.py` | Worked solutions to the exercises |
-| `test_topic.py` | `pytest` tests that verify correctness |
+| `test_topic.py` | `unittest` tests that verify correctness |
 
 A blank starter kit is available in `templates/topic/` — copy it to begin a new topic.
 
@@ -111,7 +111,7 @@ For every topic, we follow this loop:
 2. **Show** — We run `example.py` together and trace the output.
 3. **Read** — We go through `implementation.py` line by line.
 4. **Practice** — You solve `exercises.py` on your own; we compare with `solution.py`.
-5. **Verify** — `pytest test_topic.py` must pass before we move on.
+5. **Verify** — `python -m unittest test_topic.py` must pass before we move on.
 6. **Reflect** — You summarize the key idea and its complexity in your own words.
 
 This "learn → do → verify → reflect" loop is what makes the knowledge stick.
@@ -132,7 +132,7 @@ This "learn → do → verify → reflect" loop is what makes the knowledge stic
 
 Mark `[x]` when you've completed a topic (README read, example run, exercises done, tests passing).
 
-- [ ] 0.1 Complexity Analysis
+- [x] 0.1 Complexity Analysis
 - [ ] 1.1 Bubble Sort
 - [ ] 1.2 Selection Sort
 - [ ] 1.3 Insertion Sort

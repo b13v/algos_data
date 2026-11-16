@@ -30,4 +30,4 @@ Explain why these bounds hold.
 - example.py — runnable demo
 - exercises.py — practice problems (fill in the TODO stubs yourself)
 - solution.py — worked solutions
-- test_topic.py — pytest tests
+- test_topic.py — unittest tests
